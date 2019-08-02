@@ -1,0 +1,40 @@
+{
+  "_from": "express-gateway-plugin-jwt-extract",
+  "_id": "express-gateway-plugin-jwt-extract@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-SCQAz2uz7FahX31ERsLkMyFHyYY=",
+  "_location": "/express-gateway-plugin-jwt-extract",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "express-gateway-plugin-jwt-extract",
+    "name": "express-gateway-plugin-jwt-extract",
+    "escapedName": "express-gateway-plugin-jwt-extract",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/express-gateway-plugin-jwt-extract/-/express-gateway-plugin-jwt-extract-1.0.1.tgz",
+  "_shasum": "482400cf6bb3ec56a15f7d4446c2e4332147c986",
+  "_spec": "express-gateway-plugin-jwt-extract",
+  "_where": "/Users/rohit.chopra/Documents/gitlab/knowmax/api-gateway",
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Plugin jwt-extract for Express Gateway",
+  "license": "Apache-2.0",
+  "main": "manifest.js",
+  "name": "express-gateway-plugin-jwt-extract",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
+}
