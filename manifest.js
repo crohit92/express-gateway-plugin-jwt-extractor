@@ -1,12 +1,12 @@
 module.exports = {
   version: '1.2.0',
-  init: function (pluginContext) {
-    pluginContext.registerPolicy(require('./policies/jwt-extract-policy'));
-    // pluginContext.registerCondition(require('./conditions/url-match'));
+  init: function(pluginContext) {
+    pluginContext.registerPolicy(require('./policies/jwt-extractor-policy'));
+    pluginContext.registerCondition(require('./conditions/skip-endpoints'));
     // pluginContext.registerGatewayRoute(require('./routes/hello-eg'));
     // pluginContext.registerAdminRoute(require('./routes/hello-admin'));
 
-    pluginContext.eventBus.on('hot-reload', function ({ type, newConfig }) {
+    pluginContext.eventBus.on('hot-reload', function({ type, newConfig }) {
       console.log('hot-reload', type, newConfig);
     });
     // pluginContext.eventBus.on('http-ready', function ({ httpServer }) {
@@ -19,8 +19,9 @@ module.exports = {
     //   console.log('admin ready');
     // });
   },
-  policies: ['jwt-extract'], // this is for CLI to automatically add to "policies" whitelist in gateway.config
-  options: {  // This is for CLI to ask about params 'eg plugin configure example'
+  policies: ['jwt-extractor'], // this is for CLI to automatically add to "policies" whitelist in gateway.config
+  options: {
+    // This is for CLI to ask about params 'eg plugin configure example'
     baseUrl: {
       title: 'Base Url',
       description: 'the base url to initialize',
