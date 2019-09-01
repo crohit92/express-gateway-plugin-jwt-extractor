@@ -60,10 +60,14 @@ module.exports = {
           if (authHeader) {
             token = authHeader.replace('Bearer ', '');
           }
-        } else if (ts.source === 'cookies') {
+        } else if (
+          ts.source === 'cookies' &&
+          req.headers.cookie &&
+          req.headers.cookie.indexOf(ts.key) >= 0
+        ) {
           token = req.headers.cookie
             .split(';')
-            .filter(c => c.match(new RegExp(actionParams.source.key)))[0]
+            .filter(c => c.match(new RegExp(ts.key)))[0]
             .split('=')[1]
             .trim();
         }

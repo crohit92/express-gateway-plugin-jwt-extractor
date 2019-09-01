@@ -1,9 +1,10 @@
 # express-gateway-plugin-example
+
 Generic plugin example for [Express Gateway](http://www.express-gateway.io/)
 
 It shows all extension points available in the Express Gateway Plugin Engine 1.2.0
 
-### Getting Started in 5 minutes: 
+### Getting Started in 5 minutes:
 
 ```bash
 $ npm -i -g express-gateway
@@ -34,10 +35,10 @@ Plugin installed!
 Express Gateway plugin explanation:
 [Plugin Documentation](http://www.express-gateway.io/docs/plugins/)
 
-CLI for installing and configuring plugin: 
+CLI for installing and configuring plugin:
 [Plugins CLI](http://localhost:4000/docs/cli/plugins/)
 
 Guidlines how to write your custom plugin:
 [Plugin Development Guide](http://www.express-gateway.io/docs/plugins/development-guide)
 
-[Express Gateway Boot Sequence](http://www.express-gateway.io/docs/plugins/boot-sequence) explains order in which plugin entities are loaded and executed. 
+[Express Gateway Boot Sequence](http://www.express-gateway.io/docs/plugins/boot-sequence) explains order in which plugin entities are loaded and executed.
