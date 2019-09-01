@@ -1,8 +1,5 @@
-# express-gateway-plugin-example
-
-Generic plugin example for [Express Gateway](http://www.express-gateway.io/)
-
-It shows all extension points available in the Express Gateway Plugin Engine 1.2.0
+#express-gateway-plugin-jwt-extractor
+This plugin is written to override the default JWT policy of Express gateway
 
 ### Getting Started in 5 minutes:
 
@@ -20,7 +17,7 @@ eg gateway create
 $ cd ./demo
 
 # install this plugin
-$ eg plugin install example
+$ eg plugin install jwt-extractor
 ? Set value for baseUrl: http://example.com
 ? Set value for maxRequestsPerSecond: 234
 ? Would you like to enable this plugin in system config? Yes
