@@ -1,6 +1,6 @@
 {
   "name": "express-gateway-plugin-jwt-extractor",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Plugin jwt-extract for Express Gateway",
   "main": "manifest.js",
   "scripts": {

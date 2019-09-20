@@ -74,9 +74,7 @@ module.exports = {
       });
 
       if (token) {
-        const publicKey = fs.readFileSync(
-          `${__dirname}/../../../${actionParams.publicKeyFile}`
-        );
+        const publicKey = fs.readFileSync(`${actionParams.publicKeyFile}`);
         jwt.verify(
           token,
           publicKey,
